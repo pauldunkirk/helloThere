@@ -19,13 +19,15 @@ alert("Later Guv'na!");
 
 var clicks=0;
 var tau = 6.28318;
+
 var addClick = function(){
+  //in the HTML file, there is a button set to call this function via onClick=addClick() - notice the parentheses
   clicks++;
-  console.log(clicks + " click\(s\). Simply comparing clicks to tau, which is 6.28318 but rounding to 6 when we click of course. When you get to 7, console will log \"true\"");
+  console.log(clicks + " click\(s\). Simply comparing clicks to tau, which is 6.28318 (https://en.wikipedia.org/wiki/Tau) but rounding to 6 when we click of course. When you get to 7, console will log \"true\"");
   console.log(isGreaterThan( clicks, tau) );
 } //end addClick
 
-var isGreaterThan = function (number0, number1) {
+var isGreaterThan = function(number0, number1) {
   if (number0 > number1){
     return true;
   } else {
